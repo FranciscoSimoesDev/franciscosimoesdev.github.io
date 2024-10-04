@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Francisco Simões Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="portalsPage">
+
+	<!-- Wrapper -->
+	<div id="wrapperProject" class="fade-in">
+
+
+		<!-- Header -->
+		<header id="header">
+			<p class="logo">Francisco Simões</p>
+		</header>
+
+		<!-- Nav Bar-->
+		<nav id="nav">
+			<!--Tabs-->
+			<ul class="links">
+				<li><a href="index.html">About me</a></li>
+				<li><a href="professionalPageOne.html">Professional</a></li>
+				<li class="active"><a href="personalPageOne.html">Personal</a></li>
+				<li><a href="resume.html">Resumé</a></li>
+			</ul>
+
+			<!--Social Media Links-->
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/francisco-simoes/" class="icon brands fa-linkedin"><span
+							class="label">Linkedin</span></a></li>
+				<li><a href="https://www.facebook.com/francisco.simoes.184007/" class="icon brands fa-facebook-f"><span
+							class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/franciscosimoesdev/" class="icon brands fa-instagram"><span
+							class="label">Instagram</span></a></li>
+				<li><a href="https://github.com/FranciscoSimoesDev" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+				<li><a href="https://itch.io/profile/franciscosimoesdev" class="icon brands fa-itch-io"><span
+							class="label">ItchIo</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!--Title-->
+			<h1 class="personalProjectPageHeader">Project Name</h1>
+
+			<!--Video-->
+			<!-- <section class="projectBanner">
+				<video class="video" controls><source src="videos/Showreel 2022.mp4" type="video/mp4"></video>	
+			</section> -->
+
+			<!--About Group-->
+			<div class="horizontalContainerWithLabel">
+				<div class="box">
+					<a href="#" class="image fit"><img src="images/portals/portals_monsters.png" alt="" /></a>
+					<p class="imageLabel">Example of 2 characters going through portals</p>
+				</div>
+
+				<div class="personalProjectAboutContainer">
+					<h3 class="personalProjectHeaderLeft">About</h3>
+					<p class="commonParagraph">A portal system adapted to the Universal Render Pipeline that is able to take an object from one point to another in a completely seamless
+						way. This means that animations, physics, and direction are perserved between teleportations. It also doesn't implement any form of loading screen and can 
+						dynamically slive objects so that the player can also observe seamless transitions from outside.
+					</p>
+				</div>
+			</div>
+
+			<!--Team Group-->
+			<section class="personalProjectDetailsContainer">
+				<h3 class="personalProjectHeaderLeft">Team</h3>
+				<p class="commonParagraph">This project was developed by myself, though I also used assets found in the Unity Asset Store. Notably, I also used resources from online articles
+					and videos.
+				</p>
+			</section>
+
+			<!--Contributions & Software Column-->
+			<div class="personalProjectIntroContainer">
+				<div class="box">
+					<section class="containerSection">
+						<h3 class="personalProjectHeaderLeft">My Contributions</h3>
+						<ul>
+							<li class="bulletpoint">All programming;</li>
+							<li class="bulletpoint">Portal Shader;</li>
+						</ul>
+					</section>
+
+					<section class="containerSection">
+						<h3 class="personalProjectHeaderLeft">Software</h3>
+
+						<ul class="bulletpointHolder">
+							<li class="bulletpoint">Unity;</li>
+							<li class="bulletpoint">Shader & VFX Graph;</li>
+						</ul>
+					</section>
+				</div>
+
+				<div class="personalProjectImgContainer">
+					<div>
+						<a href="#" class="image fit"><img src="images/portals/portals_articlecover.png" alt=""/></a>
+						<p class="imageLabel">Portal In Another Setting</p>
+					</div>
+				</div>
+			</div>
+
+			<!--Mechanics Section-->
+			<h2 class="personalProjectHeader">Mechanics</h2>
+
+			<!--Mechanic 1-->
+			<section class="personalProjectDetailsContainer">
+				<h3 class="personalProjectHeaderLeft">Object Slicing</h3>
+				<p class="commonParagraph"> Seamless transitions of non-player objects was achieved through object duplication at each portal with adequate offsets. From there,
+					all that was needed was to make a simple fill shader that sliced the object based on it's position from the portal. This gave the illusion that a single object was
+					going through the portal whilst in reality, there were 2.
+				<a href="#" class="image fit"><img src="images/portals/portals_balls.png" alt="" /></a>
+			</section>
+
+			<!--Mechanic 2-->
+			<section class="personalProjectDetailsContainer">
+				<h3 class="personalProjectHeaderLeft">Optimization</h3>
+				<p class="commonParagraph bottomBorderPara"> Having multiple portals rendering their own position was found to be highly unoptimized. Although I decided to use the 
+					Universal Rendering Pipeline for this project for this reason, poor performance was existant in detailed scenes.
+				</p>
+
+				<div class="horizontalContainerWithLabel">
+					<div class="box">
+						<a href="#" class="image fit"><img src="images/portals/portals_desert.png" alt="" /></a>
+						<p class="imageLabel">2 Portals</p>
+					</div>
+
+					<div class="personalProjectAboutContainer">
+						<p class="commonParagraph ">In order to reduce draw calls and resources on rendering, each portal only renders it's outcome if the player is looking at it, or at it's
+							destination. This allows the project to implement multiple portals in a single scene.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<!--Form Section-->
+			<section>
+				<form method="post" action="https://formsubmit.co/7b14cb2ed6d4ca964be33a4b1195477f" method="POST">
+					<div class="fields">
+
+						<!--Email-->
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+
+						<!--Message-->
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="3"></textarea>
+						</div>
+
+						<!--Submit-->
+						<div class="field">
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</section>
+
+			<!--Contacts Section-->
+			<section class="split contact">
+				<!--Email Section-->
+				<section class="expand">
+					<h3 class="expand">Email</h3>
+					<p><a href="#">franciscosimoes.info@gmail.com</a></p>
+				</section>
+
+				<!--Social Links Section-->
+				<section class="expand">
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/francisco-simoes/"
+								class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://www.facebook.com/francisco.simoes.184007/"
+								class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/franciscosimoesdev/"
+								class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+				</section>
+
+				<!--Project Links Section-->
+				<section class="expand">
+					<h3 class="expand">Projects</h3>
+					<ul class="icons alt">
+						<li><a href="https://github.com/FranciscoSimoesDev" class="icon brands alt fa-github"><span
+									class="label">GitHub</span></a></li>
+						<li><a href="https://itch.io/profile/franciscosimoesdev"
+								class="icon brands alt fa-itch-io"><span class="label">Itchio</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Copyright</li>
+				<li>2024 Francisco Simões</li>
+			</ul>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+</body>
+
+</html>
